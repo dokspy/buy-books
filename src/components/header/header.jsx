@@ -1,24 +1,15 @@
-import './header.css'
+import style from'./Header.module.css'
+import Nav from './Nav'
+import LoginButton from './LoginButton'
+import LogoItem from './LogoItem'
 
 
 const Header = () => {
     return (
         <header>
-            <div className="logo"></div>
-            <nav>
-                <div className="dropdown">
-                    <a className="dropbtn" href="">Books</a>
-                    <div className="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
-                </div>
-                <div><a href="">Forum</a></div>
-                <div><a href="">Community</a></div>
-                <div><a href="">Janr</a></div>
-            </nav>
-            <div className="reg"><a href="">Log in</a></div>
+            <LogoItem />
+            <Nav />
+            <LoginButton />
         </header>
     )
 }

@@ -1,4 +1,4 @@
-import Trend from "./trendingBooks"
+import Trend from "./TrendingBooks"
 import './main.css'
 
 const MainPanel = () => {

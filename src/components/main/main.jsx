@@ -1,4 +1,4 @@
-import MainPanel from './mainPanel'
+import MainPanel from './MainPanel'
 
 const Main = () => {
     return (

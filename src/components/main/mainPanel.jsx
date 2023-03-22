@@ -1,9 +1,9 @@
 import Trend from "./TrendingBooks"
-import './main.css'
+import styles from './MainPanel.module.css'
 
 const MainPanel = () => {
     return (
-        <div class="main-panel">
+        <div className={styles.mainPanel}>
             <Trend />
         </div>
     )

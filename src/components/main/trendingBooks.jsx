@@ -1,9 +1,9 @@
 import BookItem from './BookItem'
-import './main.css'
+import styles from './TrendingBooks.module.css'
 
-const Trend = () => {
+export default function TrendingBooks() {
     return (
-        <div class="trending-books">
+        <div className={styles.trendingBooks}>
             <BookItem />
             <BookItem />
             <BookItem />
@@ -12,5 +12,3 @@ const Trend = () => {
         </div>
     )
 }
-
-export default Trend

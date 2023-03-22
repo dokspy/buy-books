@@ -1,0 +1,5 @@
+.trendingBooks {
+    display: flex;
+    background-color: bisque;
+    width: fit-content;
+}

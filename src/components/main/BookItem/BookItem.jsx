@@ -1,4 +1,4 @@
-import Image from "./Image"
+import Image from "../Image"
 import  styles from './BookItem.module.css'
 
 const BookItem = () => {

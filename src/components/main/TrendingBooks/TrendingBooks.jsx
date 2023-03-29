@@ -1,4 +1,4 @@
-import BookItem from './BookItem'
+import BookItem from './../BookItem/BookItem'
 import styles from './TrendingBooks.module.css'
 
 export default function TrendingBooks() {

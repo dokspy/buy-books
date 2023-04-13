@@ -1,6 +1,9 @@
+import LogoImage from './../LogoImage/LogoImage'
 
 export default function LogoItem() {
     return(
-        <div className="logo"></div> 
+        <div className="logo">
+            <LogoImage />
+        </div> 
     )
 }

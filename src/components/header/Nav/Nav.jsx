@@ -13,7 +13,7 @@ export default function Nav() {
             </div>
             <div><a href="">Forum</a></div>
             <div><a href="">Community</a></div>
-            <div><a href="">Janr</a></div>
+            <div><a href="">Genre</a></div>
         </nav>
     )
 }

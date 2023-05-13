@@ -1,5 +1,5 @@
 import React from "react";
-import { Form } from "./Form/Form";
+import { Form } from "./Form/Formlogin";
 import style from './Login.module.css'
 
 

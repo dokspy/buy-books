@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Form.module.css"
 
-export const Form = () => {
+export const Formlogin = () => {
     return (
         <form method="post" action="">
                 <input type="text" name="username" placeholder="Username" />

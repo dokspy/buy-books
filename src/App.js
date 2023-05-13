@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-// import { render } from '@testing-library/react';
 import Header from './components/header/Header.jsx';
 import Main from './components/main/Main.jsx';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';

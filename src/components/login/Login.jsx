@@ -1,13 +1,15 @@
 import React from "react";
-import { Form } from "./Form/Formlogin";
+import { Formlogin } from "./Form/Formlogin";
 import style from './Login.module.css'
+import { Link } from "react-router-dom";
 
 
 export const Login = () => {
     return (
         <div className={style.login}>
             <h2>Login</h2>
-            <Form />
+            <Formlogin />
+            
         </div>
     )
 }

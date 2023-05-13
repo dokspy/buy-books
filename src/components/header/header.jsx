@@ -1,7 +1,7 @@
-import style from'./Header.module.css'
 import Nav from './Nav/Nav'
 import LoginButton from './LoginButton/LoginButton'
 import LogoItem from './LogoItem/LogoItem'
+import style from'./Header.module.css'
 
 
 const Header = () => {

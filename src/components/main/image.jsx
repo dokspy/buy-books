@@ -1,7 +1,6 @@
 import expml from './../../pngs/exmpl.png'
 
-const Image = () => {
+export const Image = () => {
     return <img src={expml} alt="" width={100} />
 }
 
-export default Image

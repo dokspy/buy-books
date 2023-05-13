@@ -3,7 +3,7 @@ import styles from './MainPanel.module.css'
 
 const MainPanel = () => {
     return (
-        <div className={styles.mainPanel}>
+        <div className={styles['main-panel']}>
             <Trend />
         </div>
     )

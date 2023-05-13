@@ -1,11 +1,11 @@
-import Image from "../Image"
+import { Image } from "../Image"
 import  styles from './BookItem.module.css'
 
-const BookItem = (props) => {
+const BookItem = ({ name }) => {
     return (
-        <div className={styles.bookItem}>
+        <div className={styles['bookItem']}>
             <Image />
-            <div>{props.name}</div>
+            <div>{name}</div>
         </div>
     )
 }

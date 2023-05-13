@@ -1,6 +1,6 @@
 import React from "react";
-import style from './Login.module.css'
 import { Form } from "./Form/Form";
+import style from './Login.module.css'
 
 
 export const Login = () => {

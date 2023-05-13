@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/header/Header.jsx';
 import Main from './components/main/Main.jsx';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-import MainPanel from './components/main/MainPanel/MainPanel';
 import { Login } from './components/login/Login';
+import { Signup } from './components/signup/Signup';
 
 const App = () => {
   return (
@@ -15,6 +14,7 @@ const App = () => {
           <Route path='/main' element={<Main />}/>
           <Route  path='/' element={(<Main />)} />
           <Route path='/login' element={<Login />} />
+          <Route path='/signup' element={<Signup />} />
         </Routes>
       </div>
     </BrowserRouter>

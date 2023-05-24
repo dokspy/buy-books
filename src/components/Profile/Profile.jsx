@@ -2,7 +2,7 @@ import style from './profile.module.css'
 
 export const Profile = () => {
     return (
-        <div className={style.Profileprofile}>
+        <div className={style.profile}>
             <h1>Профіль</h1>
             <img src="img/user-icon.png" alt="Фото профілю" />
             <div class={style.info}>

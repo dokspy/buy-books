@@ -3,6 +3,7 @@
     /* display: flex; */
     background-color: bisque;
     width: fit-content;
+    margin-bottom: 30px;
 }
 .trendingBooks-item{
     display: flex;

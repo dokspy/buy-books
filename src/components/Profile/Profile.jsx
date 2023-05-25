@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import style from './profile.module.css' 
 
 export const Profile = () => {
@@ -12,7 +13,7 @@ export const Profile = () => {
                 <a href="#">Редагувати профіль</a>
             </div>
             <div class={style.homeLink}>
-                <a href="index.html">На головну</a>
+                <Link to="/">На головну</Link>
                 <a href="index.html">Збережене</a>
             </div>
         </div>

@@ -1,5 +1,9 @@
 .trendingBooks {
-    display: flex;
+    text-align: center;
+    /* display: flex; */
     background-color: bisque;
     width: fit-content;
+}
+.trendingBooks-item{
+    display: flex;
 }

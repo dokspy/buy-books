@@ -1,4 +1,3 @@
-import LogoImage from './../LogoImage/LogoImage'
 import style from './LogoItem.module.css'
 import { Link } from 'react-router-dom'
 

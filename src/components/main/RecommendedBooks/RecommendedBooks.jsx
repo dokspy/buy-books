@@ -8,11 +8,11 @@ export default function RecommendedBooks() {
                 <h2>Рекомендованні книги</h2>
             </div>
             <div className={styles['RecommendedBooks-item']}>
-            <BookItem name="Example book" />
-            <BookItem name="Example book" />
-            <BookItem name="Example book" />
-            <BookItem name="Example book" />
-            <BookItem name="Example book" />
+                <BookItem name="Example book" />
+                <BookItem name="Example book" />
+                <BookItem name="Example book" />
+                <BookItem name="Example book" />
+                <BookItem name="Example book" />
             </div>
         </div>
     )

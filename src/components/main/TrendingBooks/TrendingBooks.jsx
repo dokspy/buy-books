@@ -8,11 +8,11 @@ export default function TrendingBooks() {
                 <h2>Популярні книги</h2>
             </div>
             <div className={styles['trendingBooks-item']}>
-            <BookItem name="Example book" />
-            <BookItem name="Example book" />
-            <BookItem name="Example book" />
-            <BookItem name="Example book" />
-            <BookItem name="Example book" />
+                <BookItem name="Example book" />
+                <BookItem name="Example book" />
+                <BookItem name="Example book" />
+                <BookItem name="Example book" />
+                <BookItem name="Example book" />
             </div>
         </div>
     )

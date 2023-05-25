@@ -8,11 +8,11 @@ export default function NewBooks() {
                 <h2>Нові книги</h2>
             </div>
             <div className={styles['newBooks-item']}>
-            <BookItem name="Example book" />
-            <BookItem name="Example book" />
-            <BookItem name="Example book" />
-            <BookItem name="Example book" />
-            <BookItem name="Example book" />
+                <BookItem name="Example book" />
+                <BookItem name="Example book" />
+                <BookItem name="Example book" />
+                <BookItem name="Example book" />
+                <BookItem name="Example book" />
             </div>
         </div>
     )

@@ -1,0 +1,10 @@
+.RecommendedBooks {
+    text-align: center;
+    /* display: flex; */
+    background-color: bisque;
+    width: fit-content;
+    margin-bottom: 30px;
+}
+.RecommendedBooks-item{
+    display: flex;
+}

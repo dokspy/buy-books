@@ -1,10 +1,10 @@
-.trendingBooks {
+.RecommendedBooks {
     text-align: center;
     /* display: flex; */
     background-color: whitesmoke;
     width: fit-content;
     margin-bottom: 30px;
 }
-.trendingBooks-item{
+.RecommendedBooks-item{
     display: flex;
 }

@@ -1,13 +1,13 @@
-import BookItem from './../BookItem/BookItem'
-import styles from './TrendingBooks.module.css'
+import BookItem from '../BookItem/BookItem'
+import styles from './NewBooks.module.css'
 
-export default function TrendingBooks() {
+export default function NewBooks() {
     return (
-        <div className={styles.trendingBooks}>
+        <div className={styles.newBooks}>
             <div>
-                <h2>Популярні книги</h2>
+                <h2>Нові книги</h2>
             </div>
-            <div className={styles['trendingBooks-item']}>
+            <div className={styles['newBooks-item']}>
                 <BookItem name="Example book" />
                 <BookItem name="Example book" />
                 <BookItem name="Example book" />

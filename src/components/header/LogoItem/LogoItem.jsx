@@ -1,5 +1,5 @@
-import style from './LogoItem.module.css'
 import { Link } from 'react-router-dom'
+import style from './LogoItem.module.css'
 
 export default function LogoItem() {
     return (

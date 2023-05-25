@@ -1,5 +1,9 @@
 .main-panel {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
     padding-top: 15px;
+    width: 100%;
+    border: 1px solid red;
 }

@@ -11,7 +11,7 @@ export const ImageBook = () => {
         <div className={style['img-book']}>
             <img src={exmpl} alt="book image" />
             <ReadOnlineBtn />
-            <BuyBookBtn />
+            <BuyBookBtn checkBoughtBook ={checkBoughtBook}/>
         </div>
     )
 }

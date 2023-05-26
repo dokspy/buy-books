@@ -1,11 +1,12 @@
-import React from "react";
+import React from 'react';
+import { Link } from 'react-router-dom';
 import style from "./Formsignup.module.css"
 
 export const Formsignup = ({
     checkEmailValidation, validContact, setValidContact, setEmailValid, emailValid, createUser,
     correctField, checkPasswordValidation, setPasswordValid, passwordValid, content }) => {
     return (
-        <form method="post" action="">
+        <div>
             <div>
                 <input onChange={(event) => setValidContact({ firstname: event.target.value, lastname: validContact.lastname, email: validContact.email, password: validContact.password })}
                     type="text" name="firstname" placeholder="First Name" />
@@ -35,8 +36,11 @@ export const Formsignup = ({
                 <p>{passwordValid.content}</p>
             </div>
             <div>
-                <button onClick={() => createUser} type="submit">Sign Up</button>
+                {/* <Link to='/login'> */}
+                    <button onClick={createUser}
+                        content='Sign Up' type="submit"> Sign Up</button>
+                {/* </Link> */}
             </div>
-        </form>
+        </div>
     )
 }

@@ -1,13 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Formsignup } from './Formsignup/Formsignup'
 
-import { checkEmailValidation, checkPasswordValidation } from '../common/validation/Validation';
+import signAction from '../../redux/actions/signAction'
+import { useDispatch, useSelector } from 'react-redux';
+import { checkEmailValidation, checkPasswordValidation, checkFormLength } from '../common/validation/Validation';
 
 import style from './Signup.module.css'
 
 
 
 const Signup = () => {
+    const [acceptOrder, setAcceptOrder] = useState(false);
     const [correctField, setCorrectField] = useState('');
 
     const [emailValid, setEmailValid] = useState({
@@ -25,10 +28,36 @@ const Signup = () => {
         email: '',
         password: '',
     })
+
+    const dispatch = useDispatch()
+
+    const state = useSelector((state) => state);
+    const { content } = state.signStatus;
+    const [test, setTest] = useState(false)
+
+
+    const createUser = () => {
+        setAcceptOrder(checkFormLength(setAcceptOrder, setCorrectField, emailValid.status, validContact, passwordValid.status, setTest))
+
+    }
+    // console.log("acceptOrder", acceptOrder)
+    console.log("Test", test)
     
-    // const createUser = () => {
-    //     set
-    // }
+
+    useEffect(() => {
+        if (test) {
+            console.log('complited')
+        } else {
+            console.log('Error')
+        }
+    }, [test])
+    useEffect(() => {
+        if (acceptOrder) {
+            dispatch(signAction.signUpAction(validContact))
+        }
+        setAcceptOrder(false)
+
+    }, [acceptOrder])
 
     return (
         <div className={style['signup']}>
@@ -44,8 +73,8 @@ const Signup = () => {
                 checkPasswordValidation={checkPasswordValidation}
                 setPasswordValid={setPasswordValid}
                 passwordValid={passwordValid}
-                // createUser={createUser}
-                // content={content}    
+                createUser={createUser}
+                content={content}
             />
         </div>
     )

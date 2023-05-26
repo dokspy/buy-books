@@ -19,22 +19,44 @@ const initialState = {
     register: JSON.parse(localStorage.getItem('userData')) || []
 }
 
+// const createUser = (state, userData) => {
+//     const { register } = state;
+
+//     if (register.length <= 0) {
+//         register.push(userData)
+//         localStorage.setItem('userData', JSON.stringify([...register]))
+//         state.content = '';
+//     } else {
+//         state.content = 'This account is registered!'
+//     }
+
+//     return {
+//         ...state,
+//     }
+
+// }
 const createUser = (state, userData) => {
     const { register } = state;
-
+  
     if (register.length <= 0) {
-        register.push(userData)
-        localStorage.setItem('userData', JSON.stringify([...register]))
-        state.content = '';
+      register.push(userData)
+      localStorage.setItem('userData', JSON.stringify([...register]))
+      state.content = '';
+    }
+  
+    if (!register.find((el) => el.email === userData.email)) {
+      register.push(userData)
+      localStorage.setItem('userData', JSON.stringify([...register]))
+      state.content = '';
     } else {
-        state.content = 'This account is registered!'
+      state.content = 'This account is registered!';
     }
-
+  
     return {
-        ...state,
+      ...state,
     }
+  }
 
-}
 
 
 const signIn = (state, userData) => {
@@ -96,6 +118,7 @@ const logOut = (state, userData) => {
 export const SignStatusReducer = (state = initialState, action) => {
     switch (action.type) {
         case SIGN_UP:
+            // console.log('AAAAAAAAAAAAAAAAAAA')
             return createUser(state, action.payload.userData)
         case SIGN_IN:
             return signIn(state, action.payload.userData)

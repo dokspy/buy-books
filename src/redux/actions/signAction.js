@@ -29,9 +29,9 @@ const logOutAction = (userData) => {
 }
 
 const test = () => {
-    return ({
-        type: TEST
-    })
+  return ({
+    type: TEST
+  })
 }
 
 export default {

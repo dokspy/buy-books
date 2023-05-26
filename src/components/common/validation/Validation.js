@@ -11,11 +11,10 @@ export const checkEmailValidation = (setValidContact, setEmailValid, validContac
   }
 }
 
-export const checkFormLength = (setAcceptOrder, setCorrectField, emailStatus, validContact, passwordStatus, setTest) => {
+export const checkFormLength = (setAcceptOrder, setCorrectField, emailStatus, validContact, passwordStatus) => {
   const objectValues = Object.values(validContact);
   const objectKeys = Object.keys(validContact);
   let status = false;
-  setTest(status)
 
   // console.log('validContact:', validContact)
   // console.log('ObjectValue:', objectValues)

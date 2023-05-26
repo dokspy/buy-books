@@ -33,24 +33,13 @@ const Signup = () => {
 
     const state = useSelector((state) => state);
     const { content } = state.signStatus;
-    const [test, setTest] = useState(false)
 
 
     const createUser = () => {
-        setAcceptOrder(checkFormLength(setAcceptOrder, setCorrectField, emailValid.status, validContact, passwordValid.status, setTest))
+        setAcceptOrder(checkFormLength(setAcceptOrder, setCorrectField, emailValid.status, validContact, passwordValid.status))
 
     }
-    // console.log("acceptOrder", acceptOrder)
-    console.log("Test", test)
     
-
-    useEffect(() => {
-        if (test) {
-            console.log('complited')
-        } else {
-            console.log('Error')
-        }
-    }, [test])
     useEffect(() => {
         if (acceptOrder) {
             dispatch(signAction.signUpAction(validContact))

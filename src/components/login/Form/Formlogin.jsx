@@ -14,7 +14,7 @@ export const Formlogin = ({
                     checkEmailValidation(setValidContact, setEmailValid, validContact)
                 )}
                 />
-                {/* <p>{emailError.errorStatus && emailError.errorMessage}</p> */}
+                <p>{emailError.errorStatus && emailError.errorMessage}</p>
                 {validContact.email.length <= 0 && <p>{correctField}</p>}
                 <p>{validContact.email.length > 0 && emailValid.content}</p>
             </div>
@@ -25,11 +25,17 @@ export const Formlogin = ({
                     checkPasswordValidation(setPasswordValid, validContact.password)
                 )}
                 />
-                {/* <p>{passwordError.errorStatus && passwordError.errorMessage}</p> */}
+                <p>{passwordError.errorStatus && passwordError.errorMessage}</p>
                 {validContact.password.length <= 0 && <p>{correctField}</p>}
                 <p>{passwordValid.content}</p>
             </div>
-            <button type="submit">Log In</button>
+            <div>
+            <button
+            onClick={signIn} 
+            type="submit"
+            content='login'
+            >Log In</button>
+            </div>
             {/* <div>
                 <Link>Sign up</Link>
             </div> */}

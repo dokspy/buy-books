@@ -10,8 +10,9 @@ import './App.css';
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <div className='tes'>
+    <div className='tes'>
+      <BrowserRouter>
+
         <Header />
         <Routes>
           <Route path='/main' element={<Main />} />
@@ -21,9 +22,12 @@ const App = () => {
           <Route path='/profile' element={<Profile />} />
           <Route path='/bookinfo' element={<BookInfo />} />
         </Routes>
-        <Footer />
-      </div>
-    </BrowserRouter>
+        
+
+      </BrowserRouter>
+      <div style={{flex: 1}}/>
+      <Footer />
+    </div>
   );
 }
 

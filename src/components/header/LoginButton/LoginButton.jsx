@@ -3,12 +3,12 @@ import style from './LoginButton.module.css'
 
 
 
-export default function LoginButton({ checkAutorithation }) {
+export default function LoginButton({ isAuthorized }) {
     return (
         <div className={style.reg}>
             <Link to="/signup">Sign Up</Link>
             <Link to="/login">Log in</Link>
-            {checkAutorithation && <Link to="/profile">Профіль</Link>}
+            {isAuthorized && <Link to="/profile">Профіль</Link>}
         </div>
     )
 }

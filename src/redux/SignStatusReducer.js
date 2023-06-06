@@ -19,22 +19,7 @@ const initialState = {
     register: JSON.parse(localStorage.getItem('userData')) || []
 }
 
-// const createUser = (state, userData) => {
-//     const { register } = state;
 
-//     if (register.length <= 0) {
-//         register.push(userData)
-//         localStorage.setItem('userData', JSON.stringify([...register]))
-//         state.content = '';
-//     } else {
-//         state.content = 'This account is registered!'
-//     }
-
-//     return {
-//         ...state,
-//     }
-
-// }
 const createUser = (state, userData) => {
     const { register } = state;
   
@@ -105,7 +90,7 @@ const signIn = (state, userData) => {
 }
 
 const logOut = (state, userData) => {
-    userData.spile(0, 1)
+    userData.splice(0, 1)
     localStorage.setItem('UserLog', JSON.stringify(...userData))
     state.userLogStatus = false;
 

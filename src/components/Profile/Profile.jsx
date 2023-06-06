@@ -1,10 +1,18 @@
 import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import LogOutBtn from './LogOutBtn/LogOutBtn'
 import style from './profile.module.css' 
+import { useState } from 'react'
 
 export const Profile = () => {
     let nameuser = ''
     let mail = ''
     let town
+
+    const [] = useState()
+
+    // dispatch = useDispatch()
+
     return (
         <div className={style.profile}>
             <h1>Профіль</h1>
@@ -15,7 +23,8 @@ export const Profile = () => {
                 <p><strong>Місто:</strong> {town}</p>
             </div>
             <div class={style.homeLink}>
-                <Link to="/">На головну</Link>
+                {/* <Link to="/">Log out</Link> */}
+                <LogOutBtn />
                 <Link to="/saved">Збережене</Link>
             </div>
         </div>
@@ -23,3 +32,4 @@ export const Profile = () => {
 }
 
 
+    

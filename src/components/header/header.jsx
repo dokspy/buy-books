@@ -6,12 +6,12 @@ import { useState } from 'react'
 
 
 const Header = () => {
-    const [checkAutorithation, setCheckAutorithation] = useState(false)
+    const [isAuthorized, setIsAuthorized] = useState(false)
     return (
         <header>
             <LogoItem />
             <Nav />
-            <LoginButton checkAutorithation={checkAutorithation} />
+            <LoginButton isAuthorized={isAuthorized} />
         </header>
     )
 }

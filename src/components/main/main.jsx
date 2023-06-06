@@ -2,7 +2,7 @@ import MainPanel from './MainPanel/MainPanel'
 
 const Main = () => {
     return (
-        <MainPanel />
+        <MainPanel />           
     )
 }
 

@@ -13,6 +13,7 @@ const App = () => {
   return (
     <div className='tes'>
       <BrowserRouter>
+
         <Header />
         <Routes>
           <Route path='/main' element={<Main />} />
@@ -23,6 +24,8 @@ const App = () => {
           <Route path='/bookinfo' element={<BookInfo />} />
           <Route path='/forum' element={<Forum />} />
         </Routes>
+        
+
       </BrowserRouter>
       <div style={{flex: 1}}/>
       <Footer />

@@ -1,4 +1,4 @@
-import { SIGN_IN, SIGN_UP, LOG_OUT, TEST } from './actions/signAction';
+import { SIGN_IN, SIGN_UP, LOG_OUT } from './actions/signAction';
 
 
 
@@ -34,7 +34,7 @@ const createUser = (state, userData) => {
       localStorage.setItem('userData', JSON.stringify([...register]))
       state.content = '';
     } else {
-      state.content = 'This account is registered!';
+      state.content = 'Цей аккаунт вже зареєстрованно!';
     }
   
     return {
@@ -103,15 +103,11 @@ const logOut = (state, userData) => {
 export const SignStatusReducer = (state = initialState, action) => {
     switch (action.type) {
         case SIGN_UP:
-            // console.log('AAAAAAAAAAAAAAAAAAA')
             return createUser(state, action.payload.userData)
         case SIGN_IN:
             return signIn(state, action.payload.userData)
         case LOG_OUT:
             return logOut(state, action.payload)
-        case TEST:
-            console.log("TASTE!!!!!!!!!!!!")
-            return state
       default:
             return state
     }

@@ -10,9 +10,6 @@ export const Profile = () => {
     let town
 
     const [] = useState()
-
-    // dispatch = useDispatch()
-
     return (
         <div className={style.profile}>
             <h1>Профіль</h1>
@@ -23,7 +20,6 @@ export const Profile = () => {
                 <p><strong>Місто:</strong> {town}</p>
             </div>
             <div class={style.homeLink}>
-                {/* <Link to="/">Log out</Link> */}
                 <LogOutBtn />
                 <Link to="/saved">Збережене</Link>
             </div>

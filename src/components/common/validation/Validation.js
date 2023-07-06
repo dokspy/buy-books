@@ -7,7 +7,7 @@ export const checkEmailValidation = (setValidContact, setEmailValid, validContac
   if (validContact.email.match(validRegex)) {
     return setEmailValid({ content: '', status: true });
   } else {
-    return setEmailValid({ content: 'Invalid email address!', status: false });
+    return setEmailValid({ content: 'Не правильно веденна електрона пошта!', status: false });
   }
 }
 
@@ -25,7 +25,7 @@ export const checkFormLength = (setAcceptOrder, setCorrectField, emailStatus, va
           setAcceptOrder(true)
         }
       } else {
-        setCorrectField('This field is empty')
+        setCorrectField('Це поле пусте!')
         status = false
       }
     })
@@ -43,6 +43,7 @@ export const checkPasswordValidation = (setPasswordValid, value) => {
   if (value.match(validRegex)) {
     return setPasswordValid({ content: '', status: true });
   } else {
-    return setPasswordValid({ content: 'Minimum eight characters, at least one letter and one number', status: false });
+    return setPasswordValid({ content: 'Мінімум 8 символів, не менше 1 літери або 1 цифри',
+     status: false });
   }
 }

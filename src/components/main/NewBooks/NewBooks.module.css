@@ -1,9 +1,0 @@
-.newBooks {
-    text-align: center;
-    background-color: whitesmoke;
-    width: fit-content;
-    margin-bottom: 30px;
-}
-.newBooks-item{
-    display: flex;
-}

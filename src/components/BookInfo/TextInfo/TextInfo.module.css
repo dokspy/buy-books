@@ -1,9 +1,0 @@
-.text-overview {
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-}
-.text-overview p {
-    padding-top: 5px;
-    padding-bottom: 25px;
-}
